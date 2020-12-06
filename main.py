@@ -8,7 +8,7 @@ from utils.char_to_date import convert_words_to_dates
 
 def create_new_orphan(name):
     subprocess.call(["git", "checkout", "latest"])
-    subprocess.call(["git", "branch", "-d", name])
+    subprocess.call(["git", "branch", "-D", name])
     subprocess.call(["git", "push", "origin", "--delete", name])
     subprocess.call(["git", "checkout", "--orphan", name])
     subprocess.call(["git", "add", "."])
