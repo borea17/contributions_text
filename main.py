@@ -47,4 +47,4 @@ if __name__ == "__main__":
     # create new branch (afterwards set manually to default branch)
     create_new_orphan(branch_name)
     # fake commits in the shape of word
-    # create_fake_commit_in_past(all_dates, branch_name)
+    create_fake_commit_in_past(all_dates, branch_name)
