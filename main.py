@@ -33,7 +33,7 @@ def create_fake_commit_in_past(dates, branch_name, number_of_commits=50):
             # make commit on date
             subprocess.Popen(["git", "commit", "-m", fake_commit_msg], env=my_env)
     # push
-    subprocess.call(["git", "push", "-f", "origin", branch_name])
+    subprocess.call(["git", "push", "origin", branch_name])
 
 
 if __name__ == "__main__":
